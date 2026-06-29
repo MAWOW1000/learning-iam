@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { type FormEvent, useCallback, useEffect, useState } from "react";
 
 type Bucket = {
@@ -100,6 +101,12 @@ export default function Home() {
           <h1 className="mt-2 text-3xl font-semibold tracking-normal sm:text-4xl">
             S3 buckets from a typed Next.js app
           </h1>
+          <Link
+            href="/iam"
+            className="mt-4 inline-flex min-h-10 items-center rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm font-medium transition hover:bg-zinc-100"
+          >
+            Open IAM practice lab
+          </Link>
         </div>
 
         <section className="grid gap-6 md:grid-cols-[1fr_1.2fr]">
